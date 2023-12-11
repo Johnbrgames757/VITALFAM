@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: future;
+    src: url(blackfuture.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #94C9F4;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+    z-index: 100;
+}
+
+header.rolagem a{
+    color: black;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url(https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-bottom-width: 3.5vh;
+    border-bottom-color: #471066;
+}
+
+.banner h1{
+    font-size: 3em;
+    color: white;
+}
+
+.banner h1 span{
+    color: #94C9F4;
+}
+
+header h2{
+    color: #471066;
+    font-family: future;
+}
+
+header h2 span.nome{
+    color: #94C9F4;
+    font-family: future;
+}
+
+.subtitle{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subtitle span{
+    font-family: future;
+    font-size: 1.2em;
+    color: #471066;
+}
+
+.subtitle h3{
+    margin-top: 40px;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main{
+    margin: 50px;
+}
+
+main .cards{
+    display: flex;
+    padding: 32px;
+}
+
+main .cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main .cards section.card img{
+    width: 100%;
+}
+
+main .cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 345px;
+    margin-left: 32px;
+    box-shadow: 0 2px 3px #00000080;
+    transition: .5s; 
+}
+
+.card:hover { 
+	transform: translateY(-10px); 
+	box-shadow: 0 6px 8px #00000080; 
+}
+
+main .cards section.card:first-child{
+    margin-left: 0;
+}
+
+main .cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: bold;
+    background: #53677D;
+    color: white;
+    transition: background 0.5s;
+}
+
+main .cards section.card button a{
+    color: white;
+    text-decoration: none;
+}
+
+main .cards section.card h3{
+    margin: 16px 0;
+}
+
+main .cards section.card span{
+    font-weight: 300;
+    max-width: 256px;
+    font-size: 70%;
+    margin-bottom: 16px;
+}
+
+main .cards section.card button:hover{
+    background: #C7EA46;
+}
+
+main img{
+    border-radius: 10%;
+   
+  }
+
+.container2{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2em;
+}
+
+.content{
+    margin-top: 6em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-bottom: 10em;
+}
+
+.content div{
+    padding: 2em;
+}
+
+.content:nth-child(even) img{
+    order: 2
+}
+
+.content h2{
+    margin-bottom: 2em;
+    font-size: 2em;
+    color: #0839CC;
+    border: 5px solid #471066;
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.content p{
+    font-size: 1.2em;
+}
+  
+@keyframes slideright{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+    }
+
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+footer{
+    background: #53677D;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    border-top: solid 20px black;
+}
+
+footer .box{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+footer .box:nth-child(4){
+    width: 400px;
+}
+
+.box h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.box ul li{
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.box ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.box ul li a:hover{
+    color: aqua;
+}
+
+.redes img{
+    margin-left: 5px;
+}

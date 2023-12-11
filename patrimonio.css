@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: future;
+    src: url(blackfuture.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #94C9F4;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header {
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 100;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    color: black;
+}
+
+header h2 {
+    color: #471066;
+    font-family: future;
+}
+
+header h2 span.nome {
+    color: #94C9F4;
+    font-family: future;
+}
+
+ h1 span{
+    font-family: future;
+    color: #471066;
+  
+}
+
+ h1{
+    font-size: 70px;
+    text-align: center;
+    margin: 170px;
+}
+
+.equipe p{
+    text-align: center;
+    font-size: 40px;
+    margin-top: -100px;
+}
+
+.equipe p span{
+    font-family: future;
+    color: #471066;
+    border-bottom: solid 3px #471066;
+}
+
+.equipe h2{
+    text-align: center;
+    margin: 50px;
+    font-family: future;
+    font-size: 70px;
+    color: #471066;
+    border-bottom: solid 4px #471066;
+}
+
+.imagens img {
+    height: 300px;
+    width: 400px;
+    margin: 50px;
+    border-radius: 20%;
+
+}
+
+.imagens p {
+    text-align: center;
+    border-bottom: solid 4px #471066;
+    margin: 50px;
+}
+
+.imagens h3 {
+    margin-left: 50px;
+}
+
+footer {
+    background: #53677D;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+}
+
+footer .box {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+footer .box:nth-child(4) {
+    width: 400px;
+}
+
+.box h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.box ul li {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.box ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.box ul li a:hover {
+    color: aqua;
+}
+
+.redes img {
+    margin-left: 5px;
+    border-radius: 10px;
+}

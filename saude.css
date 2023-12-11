@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: future;
+    src: url(blackfuture.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: #94c9f4;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    padding: 30px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header h2 {
+    color: rgb(74, 0, 143);
+    font-family: future;
+}
+
+header h2 span.nome {
+    color: #0e309e;
+    font-family: future;
+}
+
+
+h1,
+h2 {
+    font-weight: 1000;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+section.modulo p {
+    margin-bottom: 40px;
+    text-align: auti;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+
+section.modulo.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: solid 5px #471066;
+}
+
+section.modulo h2 {
+    font-size: 70px;
+    text-align: center;
+
+}
+
+section.modulo.parallax h1 {
+    color: #000000;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 50;
+}
+
+section.modulo.parallax h2 {
+    color: #000000;
+}
+
+section.modulo.content h3{
+font-size: 50px;
+text-align: center;
+
+}
+
+section.modulo.content p{
+    border-bottom: solid 3px #000000;
+}
+
+section.modulo.content span {
+    font-family: future;
+    color: #471066;
+}
+
+section.modulo.content {
+    margin: 150px;
+
+}
+
+section.modulo.parallax-1 {
+    background-image: url(https://img.freepik.com/fotos-premium/coracao-de-conceito-de-cuidados-de-saude-e-estetoscopio-em-fundo-cinza_881236-3001.jpg);
+
+}
+
+section.modulo.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: #94c9f4(0, 0, 0, 0.519);
+    background: linear-gradient(to bottom, rgba(172, 172, 172, 0) 0, rgba(0, 0, 0, 0) 30%, #94c9f4)
+}
+
+
+
+
+
+
+section.modulo.parallax h1 {
+    color: hsl(0, 3%, 86%);
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 50;
+}
+
+.equipe {
+    margin: 50px;
+
+}
+
+.equipe h2 span {
+    font-family: future;
+    color: #471066;
+}
+
+.equipe h2 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.equipe P {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.equipe h3 {
+    text-align: center;
+    font-family: future;
+    color: #471066;
+    font-size: 60px;
+    margin: 50px;
+    border-bottom: solid 4px #471066;
+}
+
+.familia img {
+    height: 300px;
+    width: 400px;
+    border-radius: 15%;
+}
+
+.familia h3 span {
+    font-family: future;
+    color: #471066;
+
+}
+
+.familia h3{
+    text-align: left;
+    margin: 50px;
+}
+
+.bola img {
+    height: 600px;
+    width: 400px;
+    border-radius: 10%;
+}
+
+.bola h3 {
+    text-align: left;
+
+}
+
+.bola h3 span{
+font-family: future;
+
+}
+
+main{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+main .cards {
+    display: flex;
+    padding: 32px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+main .cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main .cards section.card img {
+    width: 100%;
+}
+
+main .cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 300px;
+    max-width: 250px;
+    margin-left: 32px;
+    transition: .5s;
+}
+
+main .cards section.card:first-child {
+    margin-left: 0;
+}
+
+
+
+main .cards section.card h3 {
+    margin: 16px 0;
+}
+
+main .cards section.card p {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px #000000;
+}
+
+footer {
+    background: #53677D;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+}
+
+footer .box {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+footer .box:nth-child(4) {
+    width: 400px;
+}
+
+.box h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.box ul li {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.box ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.box ul li a:hover {
+    color: #00ffff;
+}
+
+.redes img {
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
